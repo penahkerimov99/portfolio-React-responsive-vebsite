@@ -1,0 +1,45 @@
+.footer-section{
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 4rem;
+
+    .tittle9 {
+        width: 50%;
+        margin: 2rem;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    .iconbar3 {
+        display: flex;
+        width: 50%;
+        justify-content: end;
+        margin-right: 2rem;
+      
+        .icon4 {
+            width: 1.8rem;
+            height: 1.8rem;
+            border-radius: 50%;
+            border: solid 2px white;
+            padding: 0.34rem;
+            margin: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                opacity: 0.5;
+            }
+
+            i {
+                
+                color: white;
+            }
+        }
+    }
+}

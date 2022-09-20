@@ -1,0 +1,22 @@
+.main-photo{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../public/assets/bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(60%);
+}
+
+@media(max-width:375px){
+    .main-photo{
+        width: 100% !important;
+        background-position: center;
+    }
+}
+
+@media(max-width:425px){
+    .main-photo{
+        width: 100% !important;
+        background-position: center;
+    }
+}

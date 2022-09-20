@@ -1,0 +1,113 @@
+.skill {
+    margin-top: 2rem;
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .tittle3 {
+            margin: 1rem;
+        }
+
+        .line {
+            width: 3rem;
+            border: solid 0.5px orangered;
+        }
+    }
+
+    .iconbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+
+        .java {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1.5rem;
+
+            p {
+                margin-top: 0.8rem;
+                text-align: center;
+            }
+
+            .icon1 {
+                text-align: center;
+                font-size: 4rem;
+                color: darkorange;
+            }
+        }
+    }
+}
+
+@media(max-width:375px) {
+    .skill {
+        font-size: 5rem !important;
+
+        .iconbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .java{
+                .tittle5{
+                    p {
+                        font-size: 1.3rem !important;
+                        width: 250px;
+                    }
+                }
+            }
+            .icon1 {
+                i {
+                    font-size: 8rem;
+                }
+
+
+            }
+
+           
+
+            b {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media(max-width:425px) {
+    .skill {
+        font-size: 5rem !important;
+
+        .iconbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .java{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                .tittle5{
+                    p {
+                        font-size: 1.3rem !important;
+                        width: 250px;
+                    }
+                }
+            }
+            .icon1 {
+                i {
+                    font-size: 8rem;
+                }
+
+
+            }
+
+            b {
+                font-size: 2rem;
+            }
+        }
+    }
+}
