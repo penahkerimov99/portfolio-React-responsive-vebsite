@@ -1,0 +1,16 @@
+[{
+    "icon": "fa-solid fa-envelope",
+    "type": "E-mail",
+    "adress": "Kpenah@mail.ru"
+},
+{
+    "icon": "fa-solid fa-phone",
+    "type": "Phone",
+    "adress": "+994556114434"
+},
+{
+    "icon": "fa-solid fa-address-card",
+    "type": "Adress",
+    "adress": "Baku city"
+}
+]

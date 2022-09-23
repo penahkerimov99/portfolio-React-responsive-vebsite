@@ -1,4 +1,5 @@
 import React from 'react'
+import data from '../data/data.json'
 import './style.scss'
 
 export const Skills = () => {
@@ -12,45 +13,20 @@ export const Skills = () => {
                 <div className="line"></div>
                 <div className="line"></div>
             </div>
-            
+
             <div className="iconbar">
-                <div className="java">
-                    <div className="icon1"><i class="fa-brands fa-js"></i></div>
-                    <div className="tittle5">
-                        <p><b>Javascript</b></p>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, repudiandae aliquam. Rerum cum
-                            vitae deserunt.</p>
-                    </div>
-                </div>
-
-                <div className="java">
-                    <div className="icon1"><i class="fa-brands fa-css3-alt"></i></div>
-                    <div className="tittle5">
-                        <p><b>CSS</b></p>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, repudiandae aliquam. Rerum cum
-                            vitae deserunt.</p>
-                    </div>
-                </div>
-
-                <div className="java">
-                    <div className="icon1"><i class="fa-brands fa-html5"></i></div>
-                    <div className="tittle5">
-                        <p><b>HTML5</b></p>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, repudiandae aliquam. Rerum cum
-                            vitae deserunt.</p>
-                    </div>
-                </div>
-
-                <div className="java">
-                    <div className="icon1"><i class="fa-brands fa-react"></i></div>
-                    <div class="tittle5">
-                        <p><b>React</b></p>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, repudiandae aliquam. Rerum cum
-                            vitae deserunt.</p>
-                    </div>
-                </div>
+                {data.map((x) => {
+                    return (
+                        <div className='java'>
+                            <div className="icon1"><i class={x.icon}></i></div>
+                            <div className="tittle5">
+                                <p><b>{x.name}</b></p>
+                                <p> {x.description}</p>
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
-
         </div>
     )
 }

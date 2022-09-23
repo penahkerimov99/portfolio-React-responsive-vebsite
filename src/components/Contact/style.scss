@@ -35,14 +35,13 @@
         flex-direction: column;
         align-items: center;
         input{
-            width: 95%;
+            width:85%;
             height: 15rem;
-            padding-bottom: -10rem;
             border-radius: 0.4rem;
             border: solid 1px grey;
         }
         button{
-            width: 95%;
+            width: 25%;
             height: 2rem;
             background-color: #333;
             color: white;
@@ -51,6 +50,13 @@
             margin-top: 1rem;
             cursor: pointer;
         }
+    }
+}
 
+@media(max-width: 425px) {
+    .bar2{
+        input{
+            width: 95.5% !important;
+        }
     }
 }

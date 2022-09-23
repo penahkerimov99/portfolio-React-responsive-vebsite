@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "fa-brands fa-square-js",
+        "name": "Javascript",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, repudiandae aliquam. Rerum cum vitae deserunt."
+    },
+    {
+        "icon": "fa-brands fa-css3-alt",
+        "name": "CSS3",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, repudiandae aliquam. Rerum cum vitae deserunt."
+    },
+    {
+        "icon": "fa-brands fa-html5",
+        "name": "HTML5",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, repudiandae aliquam. Rerum cum vitae deserunt."
+    },
+    {
+        "icon": "fa-brands fa-react",
+        "name": "React",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, repudiandae aliquam. Rerum cum vitae deserunt."
+    }
+]

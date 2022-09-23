@@ -1,8 +1,24 @@
 import React from 'react'
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 import './style.scss'
 
 
 export const Contact = () => {
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_o4o5gpx', 'template_sfwifdp', form.current, '_ClOU6xDAmuOF4JRb')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
     return (
         <div id='contact' className='contact'>
             <div class="about">
@@ -12,10 +28,10 @@ export const Contact = () => {
                 <div class="line"></div>
 
             </div>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
                 <div className='bar1'>
-                    <input type='text' placeholder='Name' />
-                    <input type='text' placeholder='Email' />
+                    <input type='text' placeholder='Name' name='user_name'/>
+                    <input type="email" name="user_email" placeholder='Email' />
                 </div>
 
                 <div className='bar1'>
@@ -24,8 +40,8 @@ export const Contact = () => {
                 </div>
 
                 <div className='bar2'>
-                    <input type='text' placeholder='Your message' />
-                    <button>Submit</button>
+                    <input type='text' name="message"/>
+                    <button type='submit' value="Send">Submit</button>
                 </div>
 
             </form>
