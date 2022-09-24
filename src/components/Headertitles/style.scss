@@ -14,8 +14,6 @@
         font-size: 4rem;
     }
 
-
-
     .tittle2 {
         color: #333;
         text-transform: uppercase;
@@ -71,7 +69,6 @@
             top: 2rem !important;
             width: 100%;
             left: 15rem;
-        
         }
         @keyframes openclose {
             from{
@@ -90,7 +87,6 @@
     .tittle1{
         h1{
             font-size: 2rem !important;
-            width: 375px;
             text-align: center;
         }
     }
@@ -154,7 +150,7 @@
     .tittle1{
         h1{
             font-size: 3rem !important;
-            width: 500px;
+            width: 100vw;
             text-align: center;
         }
     }
